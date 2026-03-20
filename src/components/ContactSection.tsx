@@ -132,7 +132,7 @@ const ContactSection = () => {
                     {wantsCallback && <Check className="w-3 h-3 text-primary-foreground" />}
                   </button>
                   <span className="font-sans text-sm text-foreground">
-                    Je préfère être contacté(e) par téléphone
+                    Je préfère un échange téléphonique
                   </span>
                 </div>
 
@@ -163,9 +163,11 @@ const ContactSection = () => {
                 className="w-full bg-primary text-primary-foreground py-4 rounded-full font-sans font-semibold text-base shadow-elevated hover:scale-[1.01] active:scale-[0.99] transition-transform duration-300 flex items-center justify-center gap-2"
               >
                 <Send className="w-4 h-4" />
-                Envoyer ma demande
+                Recevoir ma proposition
               </button>
-
+              <p className="text-xs text-muted-foreground text-center">
+                Réponse rapide • Devis gratuit • Sans engagement
+              </p>
             </form>
           )}
         </motion.div>

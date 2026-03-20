@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# Jazzful Events
 
-## Project info
+Site vitrine pour **Jazzful Events**, un collectif de musiciens de jazz spécialisé dans les prestations événementielles haut de gamme en Provence et à l'international.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## À propos du projet
 
-## How can I edit this code?
+Jazzful Events propose des formations musicales sur mesure pour tous types d'événements : mariages, cocktails, soirées corporate, hôtellerie, festivals et soirées privées. Ce site a été conçu pour présenter l'univers du collectif, ses formations, son répertoire et permettre aux clients de faire une demande de devis en ligne.
 
-There are several ways of editing your application.
+## Méthodologie
 
-**Use Lovable**
+Le site a été construit progressivement :
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Export d’une première base générée via un outil no-code
+Reprise complète du projet dans VS Code
+Nettoyage et restructuration du code
+Rewriting des textes pour un positionnement marketing premium
+Optimisation UX section par section
+Création d’animations et ajustements responsive
+Personnalisation du formulaire de contact
 
-Changes made via Lovable will be committed automatically to this repo.
+Le projet a été pensé comme un site réel destiné à être publié et utilisé commercialement.
 
-**Use your preferred IDE**
+## Stack technique
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **React 18** + **TypeScript**
+- **Vite** — bundler et serveur de développement
+- **Tailwind CSS** — styling utilitaire
+- **shadcn/ui** — composants UI accessibles et personnalisables
+- **Framer Motion** — animations et transitions
+- **React Router** — navigation entre les pages
+- **Lucide React** — icônes
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Structure du projet
+```
+src/
+├── assets/          # Images et médias
+├── components/
+│   └── ui/          # Composants shadcn/ui
+├── hooks/           # Hooks React personnalisés
+├── lib/             # Utilitaires
+├── pages/           # Pages de l'application
+│   ├── Index.tsx
+│   ├── Confidentialite.tsx
+│   └── NotFound.tsx
+public/              # Favicon et fichiers statiques
+```
 
-Follow these steps:
+## Sections du site
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Hero** — Présentation principale avec image plein écran
+- **Formations** — Duo, Trio, Quartet, Quintet & plus
+- **Événements** — Types d'occasions couvertes
+- **Galerie** — Photos de prestations
+- **Répertoire** — Standards jazz, Bossa Nova, Swing, French Touch
+- **Témoignages** — Avis clients
+- **Zone d'intervention** — PACA et international
+- **Contact** — Formulaire de demande de devis
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Lancer le projet en local
+```bash
+# Installer les dépendances
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Lancer le serveur de développement
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Le site sera accessible sur [http://localhost:8080](http://localhost:8080)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Build de production
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+## Perspectives d'évolution
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Version bilingue (FR / EN)
+Ajout de vidéos live
+Intégration d’un CMS
+Optimisation SEO
+Déploiement en production
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
