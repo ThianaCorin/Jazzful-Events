@@ -1,38 +1,42 @@
 import { motion } from "framer-motion";
-import duoImg from "@/assets/formation-duo.jpg";
-import trioImg from "@/assets/formation-trio.jpg";
-import quartetImg from "@/assets/formation-quartet.jpg";
+import duoImg from "@/assets/formation-duo.webp";
+import trioImg from "@/assets/formation-trio.webp";
+import quartetImg from "@/assets/formation-quartet.webp";
 import quintetImg from "@/assets/formation-quintet.jpg";
 
 const ease = [0.2, 0, 0, 1] as const;
 
 const formations = [
   {
-    label: "DUO INTIMISTE",
-    title: "L'Essence",
-    description: "Piano-voix ou guitare-contrebasse, idéal pour vos cocktails intimes et dîners raffinés.",
-    ideal: "Cocktails & Dîners",
+    label: "DUO",
+    title: "L’ambiance intimiste",
+    description:
+      "Une présence musicale délicate et élégante, idéale pour accompagner un vin d’honneur, un cocktail ou un dîner.",
+    ideal: "Cocktails, cérémonies, dîners",
     image: duoImg,
   },
   {
-    label: "TRIO SWING",
-    title: "L'Équilibre Parfait",
-    description: "Piano, contrebasse et saxophone — la formule classique pour une ambiance jazzy élégante et vivante.",
-    ideal: "Réceptions & Mariages",
+    label: "TRIO",
+    title: "L’équilibre jazz",
+    description:
+      "Une formation vivante et raffinée qui crée une atmosphère chaleureuse sans dominer les échanges.",
+    ideal: "Réceptions, mariages, événements privés",
     image: trioImg,
   },
   {
     label: "QUARTET",
-    title: "La Signature",
-    description: "Notre formation phare. Saxophone, piano, contrebasse et batterie pour une expérience live complète.",
-    ideal: "Mariages & Galas",
+    title: "L’expérience live",
+    description:
+      "Une énergie musicale plus présente pour installer une véritable ambiance de concert chic et dansant.",
+    ideal: "Soirées de mariage, galas, cocktails premium",
     image: quartetImg,
   },
   {
     label: "QUINTET & PLUS",
-    title: "Le Grand Format",
-    description: "Ajout de trompette, chant ou percussions pour les événements d'envergure et les festivals.",
-    ideal: "Festivals & Corporate",
+    title: "Le groupe signature",
+    description:
+      "Une formation sur mesure avec chanteuse ou cuivres pour les événements d’envergure et les ambiances festives.",
+    ideal: "Grandes réceptions, festivals, événements d’entreprise",
     image: quintetImg,
   },
 ];
@@ -50,7 +54,7 @@ const FormationsSection = () => {
         >
           <p className="text-label text-secondary mb-4">Nos Formations</p>
           <h2 className="text-heading font-serif font-light text-foreground">
-            Une formation pour chaque moment
+            Du duo intimiste au groupe sur mesure
           </h2>
         </motion.div>
 
@@ -78,7 +82,7 @@ const FormationsSection = () => {
                 <p className="text-sm font-sans text-muted-foreground mb-4">{f.description}</p>
                 <div className="flex items-center gap-2">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-secondary" />
-                  <span className="text-xs font-sans font-semibold text-secondary">Idéal : {f.ideal}</span>
+                  <span className="text-xs font-sans font-semibold text-secondary">Idéal pour: {f.ideal}</span>
                 </div>
               </div>
             </motion.div>

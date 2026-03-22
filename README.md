@@ -10,13 +10,13 @@ Jazzful Events propose des formations musicales sur mesure pour tous types d'év
 
 Le site a été construit progressivement :
 
-Export d’une première base générée via un outil no-code
-Reprise complète du projet dans VS Code
-Nettoyage et restructuration du code
-Rewriting des textes pour un positionnement marketing premium
-Optimisation UX section par section
-Création d’animations et ajustements responsive
-Personnalisation du formulaire de contact
+- Export d'une première base générée via un outil no-code
+- Reprise complète du projet dans VS Code
+- Nettoyage et restructuration du code
+- Rewriting des textes pour un positionnement marketing premium
+- Optimisation UX section par section
+- Création d'animations et ajustements responsive
+- Personnalisation du formulaire de contact
 
 Le projet a été pensé comme un site réel destiné à être publié et utilisé commercialement.
 
@@ -74,9 +74,15 @@ npm run build
 
 ## Perspectives d'évolution
 
-Version bilingue (FR / EN)
-Ajout de vidéos live
-Intégration d’un CMS
-Optimisation SEO
-Déploiement en production
+- Version bilingue (FR / EN)
+- Ajout de vidéos live
+- Intégration d'un CMS pour la gestion du contenu
+- Branchement du formulaire de contact via EmailJS
+- Optimisation SEO
+- Déploiement en production sur domaine custom
 
+## Contact
+
+**Jazzful Events**
+Pertuis, France
+contact@jazzful-events.fr

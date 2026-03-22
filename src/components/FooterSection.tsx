@@ -6,7 +6,7 @@ const FooterSection = () => {
           <div>
             <h3 className="font-serif text-2xl font-medium text-primary-foreground mb-4">Jazzful Events</h3>
             <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed">
-              Collectif de musiciens de jazz spécialisé dans les prestations événementielles haut de gamme en Provence et à l'international.
+              Collectif de musiciens proposant des prestations jazz live pour événements privés et professionnels.
             </p>
           </div>
           <div>
@@ -27,19 +27,26 @@ const FooterSection = () => {
           <div>
             <h4 className="text-label text-primary mb-4">Contact</h4>
             <ul className="space-y-3 font-sans text-sm text-primary-foreground/60">
-              <li>contact@jazzful-events.fr</li>
-              <li>+33 6 XX XX XX XX</li>
-              <li>Aix-en-Provence, France</li>
+              <li>Contact & devis via formulaire</li>
+              <li>Réponse sous 24h</li>
+              <li>Basé en Provence</li>
+              <li>Prestations en France & à l’international</li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-primary-foreground/10 pt-8 text-center">
+        <div className="border-t border-primary-foreground/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-sans text-xs text-primary-foreground/40">
             © {new Date().getFullYear()} Jazzful Events. Tous droits réservés.
           </p>
+          <a
+            href="/confidentialite"
+            className="font-sans text-xs text-primary-foreground/40 hover:text-primary-foreground/60 transition-colors duration-300"
+          >
+            Politique de confidentialité
+          </a>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 

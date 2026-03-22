@@ -14,24 +14,15 @@ const ZoneSection = () => {
           transition={{ duration: 0.6, ease }}
         >
           <MapPin className="w-8 h-8 text-primary mx-auto mb-6" strokeWidth={1.5} />
-          <p className="text-label text-primary mb-4">Zone d'Intervention</p>
+          <p className="text-label text-primary mb-4">Sur scène, partout</p>
           <h2 className="text-heading font-serif font-light text-primary-foreground mb-6">
-            De la Provence au monde entier
+            Basés en Provence, présents là où vous recevez
           </h2>
           <p className="font-sans text-primary-foreground/70 max-w-2xl mx-auto text-lg">
-            Basés en région PACA — Marseille, Aix-en-Provence, Nice, Cannes, Saint-Tropez, Avignon — 
-            nous nous déplaçons partout en France et à l'international pour vos événements les plus prestigieux.
+            Basés dans le Sud — Marseille, Aix-en-Provence, Nice, Cannes, Monaco,
+            Saint-Tropez, Avignon — nous accompagnons vos événements privés et professionnels
+            partout en France et à l’international.
           </p>
-          <div className="flex flex-wrap justify-center gap-3 mt-10">
-            {["Marseille", "Aix-en-Provence", "Nice", "Cannes", "Monaco", "Saint-Tropez", "Avignon", "Lyon", "Paris", "International"].map((city) => (
-              <span
-                key={city}
-                className="bg-primary-foreground/10 text-primary-foreground/80 px-4 py-2 rounded-full text-sm font-sans font-medium border border-primary-foreground/10"
-              >
-                {city}
-              </span>
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>

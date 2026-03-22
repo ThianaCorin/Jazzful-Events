@@ -5,11 +5,11 @@ const ease = [0.2, 0, 0, 1] as const;
 
 const events = [
   { icon: Heart, title: "Mariages", desc: "Cérémonie, vin d'honneur, soirée dansante" },
-  { icon: Wine, title: "Cocktails", desc: "Inaugurations, vernissages, lancements" },
-  { icon: Building2, title: "Corporate", desc: "Séminaires, galas, soirées d'entreprise" },
-  { icon: Hotel, title: "Hôtellerie", desc: "Lobbys, restaurants, bars d'hôtels" },
-  { icon: Music, title: "Festivals", desc: "Jazz festivals, fêtes de village, concerts" },
-  { icon: PartyPopper, title: "Soirées Privées", desc: "Anniversaires, garden-parties, fêtes" },
+  { icon: Wine, title: "Cocktails", desc: "Inaugurations, vernissages, lancements de marque" },
+  { icon: Building2, title: "Événements d’entreprise", desc: "Séminaires, galas, soirées professionnelles" },
+  { icon: Hotel, title: "Hôtellerie", desc: "Hôtels, restaurants, bars et lieux de réception" },
+  { icon: Music, title: "Festivals", desc: "Festivals de jazz, fêtes de village, concerts publics" },
+  { icon: PartyPopper, title: "Soirées Privées", desc: "Anniversaires, garden-parties, célébrations" },
 ];
 
 const EventsSection = () => {
@@ -23,7 +23,7 @@ const EventsSection = () => {
           transition={{ duration: 0.6, ease }}
           className="text-center mb-16"
         >
-          <p className="text-label text-secondary mb-4">Nos Événements</p>
+          <p className="text-label text-secondary mb-4">Événements</p>
           <h2 className="text-heading font-serif font-light text-foreground">
             Pour chaque occasion, la note juste
           </h2>
